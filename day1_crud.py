@@ -146,7 +146,7 @@ async def ping_server() -> None:
                     }
                 )
 
-        await users.insert_many(data)
+        # await users.insert_many(data)
 
         cursor = users.find().batch_size(100)
 
